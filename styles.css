@@ -10,6 +10,10 @@ body {
   color: #212121;
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+  padding: 0;
+  margin: 0;
+margin-top: 24px;
+ 
 }
 ul {
   list-style: none;
@@ -17,8 +21,16 @@ ul {
 p {
   color: var(--additional-color);
 }
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+outline: 2px;color: #000;
+}
 .top-line {
   background: #ffffff;
+ 
+ 
 }
 
 /* logotype*/
@@ -33,6 +45,7 @@ p {
   font-size: 26px;
   line-height: 1.2px;
   text-decoration: none;
+  
 }
 .logo-web {
   color: #2196f3;
@@ -42,6 +55,10 @@ p {
 .site-nav a :focus {
   color: var(--accent-color);
 }
+.site-nav{
+  padding: 0;
+  margin: 0;
+}
 .site-nav a {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
@@ -50,6 +67,11 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+.current{
+
 }
 
 .site-nav a.current {
@@ -58,10 +80,19 @@ p {
 .color-nav a {
   color: var(--additional-color);
 }
+.main{
+  padding: 0;
+  margin: 0;
+}
 /*cap*/
 .cap {
   background: #2f303a;
   color: #ffff;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 .cap h1{
   font-weight: 900;
@@ -70,6 +101,9 @@ p {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
 
 }
 .button-cap :hover,
@@ -82,16 +116,17 @@ p {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.8;
-  display: flex;
+  line-height: 1.88;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
-  text-align: center;
-  letter-spacing: 0.03em;
-  cursor: pointer;
+  
+  
 }
 /*features*/
+.features{
+  padding: 0;
+  margin: 0;
+}
 .features h3 {
   font-weight: 700;
   font-size: 14px;
@@ -106,20 +141,24 @@ p {
   letter-spacing: 0.03em;
 }
 /* what we do*/
+.we_do_section{
+  padding: 0;
+  margin: 0;
+}
 .we_do h2{
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
-
-
 }
 
 /*our team*/
 .team {
   background-color: #f5f4fa;
+ 
 }
+
 .team h2{
   font-weight: 700;
 font-size: 36px;
@@ -140,6 +179,10 @@ letter-spacing: 0.03em;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+}
+.info_team{
+  padding: 0;
+  margin: 0;
 }
 /* button portfolio*/
 .button-portfolio {
@@ -197,6 +240,7 @@ color: var(--additional-color);
 /*basement*/
 .basement{
   background-color: #2f303a;
+  
 }
 .basement a {
  
@@ -217,6 +261,8 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: #FFFFFF;
+padding: 0;
+  margin: 0;
 }
 .basement-inf a {
   color: #ffffff99;
