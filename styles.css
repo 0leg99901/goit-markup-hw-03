@@ -1,19 +1,15 @@
 :root {
   --primary-text-color: #212121;
   --accent-color: #2196f3;
-  --additional-color:#757575;
-
-  
+  --additional-color: #757575;
 }
 
 body {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
-  padding: 0;
-  margin: 0;
-margin-top: 4px;
-
+  padding-left: 15px;
+  padding-right: 15px;
 }
 ul {
   list-style: none;
@@ -21,67 +17,65 @@ ul {
 p {
   color: var(--additional-color);
 }
-.container{;
- align-items: center;
+.container {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-outline: 2px;color: #000;
 }
-.section{
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 .top-line {
   background: #ffffff;
 }
-
-.page-header{
-  display: flex;
-  align-items:center;
-  justify-content: center;
-
-}
-/* logotype*/
-.logo{
- margin-right: 93px;
-}
-.logo a:hover,
-.logo a:focus {
+.page-header :hover,
+.page-header :focus {
   color: var(--accent-color);
 }
-.logo a {
+.page-header a {
+  margin-right: 93px;
   color: var(--primary-text-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2px;
   text-decoration: none;
+  
+  
+}
+.page-header {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
+/* logotype*/
+
 .logo-web {
-  color: var(--accent-color);;
+  color: var(--accent-color);
 }
 /* site navigation*/
 .site-nav a:hover,
 .site-nav a :focus {
   color: var(--accent-color);
 }
-.site-nav{
-  display:flex;
+.site-nav {
+  display: flex;
   padding: 0;
   margin: 0;
-  margin-left: 70px;
-  m
+  padding-top: 32px;
+  padding-bottom: 32px;
+ 
 }
-.site-nav ul{
-padding-left: 93px;  
+.site-nav ul {
+  padding-left: 93px;
 }
-.site-nav li:not(:last-child){
-  margin-right:  50px;
+.site-nav li:not(:last-child) {
+  margin-right: 50px;
 }
 .site-nav a {
-  
+  display: block;
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   font-weight: 500;
@@ -91,35 +85,60 @@ padding-left: 93px;
   text-decoration: none;
   padding: 0;
   margin: 0;
+ 
 }
-.site-nav a.current {
+
+.site-nav a.cap-studio {
   color: var(--accent-color);
 }
-.color-nav  {
- margin-left: auto;
+.site-nav a.cap-portfolio{
+  color: var(--accent-color);
 }
-.color-nav a{
-  color: var(--additional-color); 
+ .site a:hover,
+.site a :focus {
+  color: var(--accent-color);
 }
-.main{
+.site {
+  display: flex;
+  margin-left: auto;
+  
+  
+}
+.site ul {
+ padding: 0;
+ margin: 0;
+}
+.site li:not(:last-child) {
+  margin-right: 50px;
+ 
+  
+}
+.site a {
+  display: block;
+  color: var(--additional-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
   padding: 0;
   margin: 0;
-}
+  margin-left: auto;
+ 
+ 
+} 
+
 /*cap*/
 .cap {
   background: #2f303a;
   color: #ffff;
-  margin-top: 0px;
   margin-bottom: 0px;
-  padding: 0;
-  margin: 0;
+  padding-top: 200px;
+  padding-bottom: 200p;
   text-align: center;
-  width: 1600px;
-height: 600px;
-left: 0px;
-top: 80px;
 }
-.cap h1{
+.cap h1 {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -128,12 +147,7 @@ top: 80px;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
-  
- padding: 200px 452px 30px 452px;
-
-
-
-
+  margin-bottom: 30px;
 }
 
 .button-cap :hover,
@@ -149,17 +163,13 @@ top: 80px;
   line-height: 1.88;
   align-items: center;
   letter-spacing: 0.06em;
-  
-  
 }
 /*features*/
-.features{
+.features {
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: center;
-
-  
 }
 .features h3 {
   font-weight: 700;
@@ -175,42 +185,40 @@ top: 80px;
   letter-spacing: 0.03em;
 }
 /* what we do*/
-.we_do_section li:not(:last-child){
-  margin-right:  30px;
+.we_do_section li:not(:last-child) {
+  margin-right: 30px;
 }
-.we_do_section{
+.we_do_section {
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: center;
-  
 }
-.we_do h2{
-font-weight: 700;
-font-size: 36px;
-line-height: 1.16;
-text-align: center;
-letter-spacing: 0.03em;
+.we_do h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 /*our team*/
-.team-section  {
-padding: 0px;
-margin: 0px;
-background-color:#FFFFFF;
+.team-section {
+  padding: 0px;
+  margin: 0px;
+  background-color: #ffffff;
 }
 
-.team  {
-  background-color: #F5F4FA
-  
+.team {
+  background-color: #f5f4fa;
 }
 
-.team h2{
+.team h2 {
   font-weight: 700;
-font-size: 36px;
-line-height: 1.16;
-text-align: center;
-letter-spacing: 0.03em;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .team h3 {
   font-weight: 500;
@@ -226,10 +234,8 @@ letter-spacing: 0.03em;
   text-align: center;
   letter-spacing: 0.03em;
 }
-.info_team :not(:first-child){
-  margin-left :30px;
-  
-  
+.info_team :not(:first-child) {
+  margin-left: 30px;
 }
 .info_team {
   margin-bottom: 0;
@@ -238,14 +244,15 @@ letter-spacing: 0.03em;
   padding: 0;
   margin-right: 0;
   display: flex;
-  background-color:#F5F4FA;
-  
+  background-color: #f5f4fa;
 }
 /*portfolio*/
-.portfolio{
+.portfolio ul {
+
+margin: 0px;
+  padding: 0px;
 
 }
-
 /* button portfolio*/
 .button-portfolio {
   font-style: normal;
@@ -254,91 +261,82 @@ letter-spacing: 0.03em;
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: #212121;
-  padding:  94px 512px 34px 512px; 
+  padding: 94px 512px 34px 512px;
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
 }
-.button-portfolio li{
+.button-portfolio li {
   margin-bottom: 50px;
 }
 /*portfolio page*/
-.button-all{
+.button-all {
   background: var(--accent-color);
-color: #FFFFFF;
-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-border-radius: 4px;
+  color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
-.list-button{
-  margin-left :8px;
+.list-button {
+  margin-left: 8px;
 }
 .list-button:hover,
 .list-button:focus {
-  background:var(--accent-color);
-  color: #FFFFFF;
-
+  background: var(--accent-color);
+  color: #ffffff;
 }
 .list-button {
-  background: #F5F4FA;
-border-radius: 4px;
-color: #212121;
+  background: #f5f4fa;
+  border-radius: 4px;
+  color: #212121;
 }
 /* portfolio project*/
-.project  :nth-child(3n){
+.project :nth-child(3n) {
   margin-right: 0px;
 }
-.container ul {
-  margin: 0px;
-  padding:0px;
-}
-.project  {
+.project {
   background: #ffffff;
   display: flex;
   flex-wrap: wrap;
-padding: 0;
-margin: 0;
-margin-bottom: 30px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
   margin-right: 30px;
-  align-items:center;
+  align-items: center;
   justify-content: center;
-
 }
-.project a{
-  border: 1px solid #EEEEEE;
+.project a {
+  border: 1px solid #eeeeee;
   list-style: none;
   text-decoration: none;
   padding: 0px;
   margin: 0;
 }
-.work-titles  {
-font-weight: 700;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
-color: var(--primary-text-color);
-list-style: none;
-
+.work-titles {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+  list-style: none;
 }
-.work-text{
+.work-text {
   font-weight: 400;
-font-size: 16px;
-line-height: 1.88;
-letter-spacing: 0.03em;
-color: var(--additional-color);
-
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--additional-color);
 }
 /*basement*/
-.basement{
+.basement {
   background-color: #2f303a;
-height: 252px;
+  height: 252px;
 }
-.basement_inf_logo{
-  padding-top:  60px;
-  
-  }
+.basement_inf_logo {
+  padding-top: 60px;
+}
 .basement a {
- 
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   color: #ffff;
   font-weight: 700;
@@ -347,24 +345,24 @@ height: 252px;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-.basement-inf{
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color: #FFFFFF;
-padding: 0;
+.basement-inf {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  padding: 0;
   margin: 0;
 }
 .basement-inf a {
   color: #ffffff99;
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   text-decoration: none;
 }
