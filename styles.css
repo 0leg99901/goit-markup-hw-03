@@ -127,12 +127,11 @@ p {
 }
 .site {
   display:flex;
-  margin-left: auto;
   padding: 0;
   margin: 0;
   margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  align-items: center;
+  
   
 }
 .site ul {
@@ -271,6 +270,9 @@ p {
   margin-right: 0px;
   text-align: center;
 }
+.team-section img{
+  display: block;
+}
 .section_team {
   background-color: #f5f4fa;
   padding-top: 94px;
@@ -335,27 +337,14 @@ p {
 }
 
 /*portfolio*/
-.portfolio ul {
-margin: 0px;
-  padding: 0px;
- 
 
-}
 /* button portfolio*/
 .button-portfolio {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-  color: #212121;
-  padding: 94px 512px 34px 512px;
   display: flex;
-  align-items: center;
   justify-content: center;
-}
-.button-portfolio li {
   margin-bottom: 50px;
+  gap: 8px;
+
 }
 /*portfolio page*/
 .button-all {
@@ -364,9 +353,8 @@ margin: 0px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-}
-.list-button {
-  margin-left: 8px;
+  padding: 6px 22px;
+  
 }
 .list-button:hover,
 .list-button:focus {
@@ -377,6 +365,7 @@ margin: 0px;
   background: #f5f4fa;
   border-radius: 4px;
   color: #212121;
+  padding: 6px 22px;
 }
 /* portfolio project*/
 .project :nth-child(3n) {
@@ -387,15 +376,25 @@ margin: 0px;
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  margin: 0 auto;
-  margin-bottom: 30px;
-
+  gap: 30px;
 }
 .project a {
-  border: 1px solid #eeeeee;
-  list-style: none;
   text-decoration: none;
-  padding: 0px;
+}
+.project img{
+  display: block;
+}
+.project_inf{
+  padding: 20px 24px;
+  border-bottom: 1px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+}
+.project_inf p{
+  margin-top: 4px;
+}
+.project_inf h2,p{
+  padding: 0;
   margin: 0;
 }
 .work-titles {
@@ -417,13 +416,12 @@ margin: 0px;
 .basement {
   background-color: #2f303a;
   height: 252px;
-}
-.basement_inf_logo {
   padding-top: 60px;
+  padding-bottom: 60px;
+  color: #FFFF;
 }
 .basement a {
-  font-family: "Raleway";
-  font-style: normal;
+  font-family: "Raleway", sans-serif;
   color: #ffff;
   font-weight: 700;
   font-size: 26px;
@@ -431,24 +429,25 @@ margin: 0px;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
+.basement address{
+  margin-top: 28px;
+}
 .basement-inf {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   color: #ffffff;
   padding: 0;
   margin: 0;
+  
 }
 .basement-inf a {
   color: #ffffff99;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
+}
+.basement-inf li{
+  margin-top: 12px;
 }
