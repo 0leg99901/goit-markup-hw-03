@@ -342,6 +342,8 @@ p {
 .button-portfolio {
   display: flex;
   justify-content: center;
+  margin-top: 0;
+  padding-left: 0;
   margin-bottom: 50px;
   gap: 8px;
 
@@ -352,7 +354,7 @@ p {
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+
   padding: 6px 22px;
   
 }
@@ -363,20 +365,23 @@ p {
 }
 .list-button {
   background: #f5f4fa;
-  border-radius: 4px;
+
   color: #212121;
   padding: 6px 22px;
 }
 /* portfolio project*/
+.project-list{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  gap: 30px;
+}
 .project :nth-child(3n) {
   margin-right: 0px;
 }
 .project {
   background: #ffffff;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  gap: 30px;
 }
 .project a {
   text-decoration: none;
@@ -415,7 +420,6 @@ p {
 /*basement*/
 .basement {
   background-color: #2f303a;
-  height: 252px;
   padding-top: 60px;
   padding-bottom: 60px;
   color: #FFFF;
@@ -430,14 +434,15 @@ p {
   text-decoration: none;
 }
 .basement address{
-  margin-top: 28px;
+  margin-top: 20px;
 }
 .basement-inf {
   color: #ffffff;
   padding: 0;
   margin: 0;
-  
+  margin-top: 9px;
 }
+  
 .basement-inf a {
   color: #ffffff99;
   font-family: "Roboto", sans-serif;
@@ -448,6 +453,6 @@ p {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-.basement-inf li{
-  margin-top: 12px;
+.basement-inf li:not(:first-child) {
+  margin-top: 9px;
 }
